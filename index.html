@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pan</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="download.png" type="x-icon">
+
+</head>
+<body>
+    <header class="header">
+    <a href="#" class="logo">HOT <span>PAN</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offer">Offers</a></li>
+        <li><a href="#FeedBack">FeedBack</a></li>
+        <i class='bx bxs-cart-alt' id="cartbtn"></i>
+    </ul>
+</header>
+
+<div class="fullcontainer" id="fullcontainer">
+    <section id="home">
+        <div class="imagehome">
+            <img src="chicken.png" alt="">
+        </div>
+        <div class="home-text">
+            <h2>Our Special Dish....</h2>
+            <h1>Fried Chicken</h1>
+            <p>Your happy place is our happy place! Welcome to the best restaurant in town serving everything from burgers and fries to pasta and pizza, and the hottest deserts.</p>
+            <a href="#menu" id="btn">See Menu</a>
+            <div class="icons">
+                <a href="https://www.instagram.com/hotpanchinese/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://facebook.com/hotpanchinese"><i class='bx bxl-facebook'></i></a>
+                <a href="https://wa.me/916379641143"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+         <div class="heading">
+            <h2>OUR DISHES</h2>
+            <span>Popular Dishes</span>
+         </div>
+         <div class="dishcontainer">
+            <div class="box" id="box1">
+                <div class="icon">
+                <i class='bx bxs-heart' id="heart"></i>
+                </div>
+                <img src="briyani.png" alt="" width="200px" height="200px">
+                <h3>Briyani</h3>
+                <h5>299</h5>
+               <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box2">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart"></i>
+                    </div>
+                <img src="rice.png" alt=""  width="200px" height="200px">
+                <h3>Chicken Rice</h3>
+                <h5>259</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box3">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart3"></i>
+                </div>
+                <img src="chicken65.png" alt=""  width="200px" height="200px">
+                <h3>Chicken 65</h3>
+                <h5>159</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box4">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart4"></i>
+                </div>
+                <img src="pizza.png" alt=""  width="200px" height="200px">
+                <h3>Pizza</h3>
+                <h5>299</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box5">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart5" ></i>
+                </div>
+                <img src="noodles.png" alt=""  width="200px" height="200px">
+                <h3>Noodles</h3>
+                <h5>179</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box6">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart6"></i>
+                </div>
+                <img src="burger.png" alt=""  width="200px" height="200px">
+                <h3>Burger</h3>
+                <h5>99</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box7">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart7"></i>
+                </div>
+                <img src="chappthi.png" alt=""  width="200px" height="200px">
+                <h3>chappthi</h3>
+                <h5>99</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box8">
+                <div class="icon">
+                <i class='bx bxs-heart' id="heart8"></i>
+                </div>
+                <img src="dosa.png" alt=""  width="200px" height="200px">
+                <h3>Dosa</h3>
+                <h5>59</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box9">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart9"></i>
+                </div>
+                <img src="idli.png" alt=""  width="200px" height="200px">
+                <h3>Idli</h3>
+                <h5>39</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box10">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart10"></i>
+                </div>
+                <img src="gheerice.png" alt=""  width="200px" height="200px">
+                <h3>Ghee Rice</h3>
+                <h5>99</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box11">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart11"></i>
+                </div>
+                <img src="pongal.png" alt=""  width="200px" height="200px">
+                <h3>Pongal</h3>
+                <h5>89</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box12">
+                <div class="icon">
+                    <i class='bx bxs-heart' id="heart12"></i>
+                </div>
+                <img src="plow.png" alt=""  width="200px" height="200px">
+                <h3>Pulav</h3>
+                <h5>99</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+         </div>
+    </section>
+    
+    <section id="offer">
+        <div class="heading">
+            <h2>Special Offers</h2>
+            <span>Combo</span>
+         </div>
+         <div class="dishcontainer">
+            <div class="box" id="box13">
+                <div class="icon">
+                <i class='bx bxs-heart' id="c1"></i>
+                </div>
+                <img src="combo_1.png" alt="" width="200px" height="200px">
+                <h3>Burger with French Fries</h3>
+                <h5>159</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box14">
+                <div class="icon">
+                <i class='bx bxs-heart' id="c1"></i>
+                </div>
+                <img src="combo_2.png" alt="" width="200px" height="200px">
+                <h3>Chicken Wings with Cool drink</h3>
+                <h5>249</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box15">
+                <div class="icon">
+                <i class='bx bxs-heart' ></i>
+                </div>
+                <img src="combo_3.png" alt="" width="200px" height="200px">
+                <h3>Parotta with Chicken Curry</h3>
+                <h5>149</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box16">
+                <div class="icon">
+                <i class='bx bxs-heart' ></i>
+                </div>
+                <img src="nonvegmeal.png" alt="" width="200px" height="200px">
+                <h3>Non Veg Meals</h3>
+                <h5>149</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box17">
+                <div class="icon">
+                <i class='bx bxs-heart' ></i>
+                </div>
+                <img src="vegmeal.png" alt="" width="200px" height="200px">
+                <h3>Veg Meals</h3>
+                <h5>99</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            <div class="box" id="box18">
+                <div class="icon">
+                <i class='bx bxs-heart' ></i>
+                </div>
+                <img src="sharwarma.png" alt="" width="200px" height="200px">
+                <h3>Shawarma</h3>
+                <h5>49</h5>
+                <button id="btn" onclick="addtocart(event)">add To Cart</button>
+            </div>
+            </div>
+    </section>
+    
+    
+    <section id="FeedBack">
+    
+        <div class="heading">
+            <h2>FeedBack</h2>
+            <span>Tell Your FeedBack</span>
+         </div>
+        <div class="feedbackform">
+         <form action="mailto:vasanthkcse2022@ksrce.ac.in" method="post">
+            <input type="text" placeholder="Enter Your mail" id="inputmail">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Feedback Here......"></textarea>
+            <input type="submit" value="send" class="button">
+         </form>
+         </div>
+    </section>
+    <footer>
+       <div class="location">
+        <h2>Locations</h2>
+          <p>India</p>
+          <p>Sri Lanka</p>
+          <p>USA</p>
+          <p>Italy</p>
+       </div>
+       <div class="quicklink">
+           <h2>Quick Link</h2>
+           <a href="#">Home</a>
+           <a href="#menu">menu</a>
+           <a href="#offer">offer</a>
+           <a href="#FeedBack">FeedBack</a>
+       </div>
+       <div class="contact">
+          <h2>Contact</h2>
+          <p>+91 97123 45678</p>
+          <p>cheif001@gmail.com</p>
+          <p>Hotpan@gmail.com</p>
+       </div>
+       <div class="service">
+        <h2>Our Service</h2>
+        <p>Fast Delivery</p>
+        <p>Easy Payments</p>
+        <p>24x7 Service</p>
+       </div>
+    </footer>
+    
+    
+</div>
+
+<div class="popup" id="popup">
+    <div class="heading">
+        <h2>My Cart</h2>
+        <span>Your Cart Dishes</span>
+     </div>
+     <div class="cartcontainer">
+        
+    </div>
+    <header id="popupheader">
+        <h3 id="total"></h3>
+        <button id="placeorder">Place Order</button>
+    </header>
+</div>
+
+<div class="login" id="login">
+    <div class="logincontainer">
+        <form id="form" autocomplete="off">
+            <span id="cross">X</span>
+        <h1 class="head">Place Order</h1>
+        <div class="small">
+            <div id="input-group">
+            <input type="text" placeholder="NAME"  id="name">
+            <div id="error">ㅤ</div>
+            </div>
+            <div id="input-group">
+            <input type="text" placeholder="E-MAIL"  id="email">
+            <div id="error">ㅤ</div>
+            </div>
+            <div id="input-group">
+            <input type="text" placeholder="ADDRESS" id="address">
+            <div id="error">ㅤ</div>
+            </div>
+            <div id="input-group">
+            <input type="text" placeholder="number" id="number">
+            <div id="error">ㅤ</div>
+            </div>
+            <button id="submit" onclick="conformorder()">Place Order</button>
+        </div>
+        </form>
+    </div>
+</div>
+
+<div class="popup3" id="popup3">
+    <i class='bx bx-check'></i>
+    <h2>Order Placed ! ! !</h2>
+</div>
+</body>
+</html>
